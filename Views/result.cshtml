@@ -1,0 +1,12 @@
+<h1>Result</h1>
+@if(@Model.GetWord() == "" || @Model.GetSentence() == "")
+{
+  <h3>There is nothing to compared to</h3>
+  <p><a href="/">Homepage</a></p>
+}
+else
+{
+  <p>the word <strong>@Model.GetWord()</strong> appears @Model.CountRepeats(@Model.GetWord(), @Model.SplitSentence(@Model.GetSentence())) times in <strong>@Model.GetSentence()</strong></p>
+  <p><a href="/">Homepage</a></p>
+
+}

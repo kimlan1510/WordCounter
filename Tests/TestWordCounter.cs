@@ -48,11 +48,6 @@ namespace WordCounter.Objects
 
       //Assert
       Assert.Equal(0, count);
-
-
-
-
-
     }
   }
 }
