@@ -18,5 +18,21 @@ namespace WordCounter.Objects
       //Assert
       Assert.Equal(word, sentence);
     }
+
+    [Fact]
+    public void Test2_SplitSentenceIntoWords_ReturnFalse()
+    {
+      //Arrange
+      RepeatCounter newCount = new RepeatCounter("hello", "hello world");
+      string [] word = new string[]{"hello"};
+
+      //Act
+      string sentence = newCount.GetSentence();
+      string[] wordArray = newCount.SplitSentence(sentence);
+
+      //Assert
+      Assert.Equal(word, wordArray);
+
+    }
   }
 }

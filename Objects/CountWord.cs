@@ -21,5 +21,11 @@ namespace WordCounter.Objects
     {
       return _sentence;
     }
+
+    public string[] SplitSentence(string sentence)
+    {
+      string[] wordArray = sentence.Split(' ');
+      return wordArray;
+    }
   }
 }
