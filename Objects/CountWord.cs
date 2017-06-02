@@ -21,11 +21,24 @@ namespace WordCounter.Objects
     {
       return _sentence;
     }
-
+    // method to split a sentence into individual words.
     public string[] SplitSentence(string sentence)
     {
       string[] wordArray = sentence.Split(' ');
       return wordArray;
+    }
+    // method to count the number of times a word appears in a sentence.
+    public int CountRepeats(string searchedWord, string[] wordArray)
+    {
+      int count = 0;
+      foreach(string word in wordArray )
+      {
+        if(word == searchedWord)
+        {
+          count += 1;
+        }
+      }
+      return count;
     }
   }
 }
