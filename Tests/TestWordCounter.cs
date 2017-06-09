@@ -33,21 +33,21 @@ namespace WordCounter.Objects
       //Assert
       Assert.Equal(testString, resultString);
     }
-    //
-    // [Fact]
-    // public void Test3_CountWord_ReturnFalse()
-    // {
-    //   //Arrange
-    //   RepeatCounter newCount = new RepeatCounter("hello", "hello world");
-    //
-    //   //Act
-    //   string word = newCount.GetWord();
-    //   string sentence = newCount.GetSentence();
-    //   string[] wordArray = newCount.SplitSentence(sentence);
-    //   int count = newCount.CountRepeats(word, wordArray);
-    //
-    //   //Assert
-    //   Assert.Equal(0, count);
-    // }
+
+    [Fact]
+    public void Test3_CountWord_ReturnTrue()
+    {
+      //Arrange
+      RepeatCounter newCount = new RepeatCounter("hello", "hello world");
+
+      //Act
+      string word = newCount.GetWord();
+      string sentence = newCount.GetSentence();
+      string[] wordArray = newCount.SplitSentence(sentence);
+      int count = newCount.CountRepeats(word, wordArray);
+
+      //Assert
+      Assert.Equal(1, count);
+    }
   }
 }
