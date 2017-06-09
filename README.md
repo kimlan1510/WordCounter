@@ -12,9 +12,9 @@ _This program allows the users to type a word and a sentence. The program will r
 
  | Behavior   |Input Example   | Output Example      | Why?|
  |----------------       |:----------:    |:------------:        |---------:|
- |Object should return the word and the string    |  SomeObject("hello", "hello world")             | display "hello" and "hello world"     | To check if Setters and Getters are working. Do not use empty space "", because it will give an error.|
+ |Object should return the word and the string    |  user enters word: "hello", sentence: "hello world"             | display "hello" and "hello world"     | To check if Setters and Getters are working. Do not use empty space "", because it will give an error.|
  |split the string of word into individual words  | "hello world"| "hello", "world"   |Split the string so that each word can be compared to the searched word. |
- |Return the number of times the word appears in the given sentence                                                | "hello" in "hello world"             | "hello" appears 1 times in "hello world"                |The choice of searched word is not important. However, use "hello" to make sure the word counter method works properly and returns a value. |
+ |Return the number of times the word appears in the given sentence | "hello" in "hello world"             | "hello" appears 1 times in "hello world"                |The choice of searched word is not important. However, use "hello" to make sure the word counter method works properly and returns a value. |
 
 
 
@@ -41,6 +41,7 @@ _Kimlan1510@gmail.com_
 * _C#_
 * _Nancy_
 * _Razor_
+* _Xunit_
 
 
 ### License
