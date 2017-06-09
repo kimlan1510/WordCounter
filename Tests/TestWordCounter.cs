@@ -19,20 +19,20 @@ namespace WordCounter.Objects
       Assert.Equal(testWord, resultWord);
     }
 
-    // [Fact]
-    // public void Test2_SplitSentenceIntoWords_ReturnTrue()
-    // {
-    //   //Arrange
-    //   RepeatCounter newCount = new RepeatCounter("hello", "hello world");
-    //   string [] word = new string[]{"hello", "world"};
-    //
-    //   //Act
-    //   string sentence = newCount.GetSentence();
-    //   string[] wordArray = newCount.SplitSentence(sentence);
-    //
-    //   //Assert
-    //   Assert.Equal(word, wordArray);
-    // }
+    [Fact]
+    public void Test2_SplitSentenceIntoWords_ReturnTrue()
+    {
+      //Arrange
+      RepeatCounter newCount = new RepeatCounter("hello", "hello world");
+      string [] testString = new string[]{"hello", "world"};
+
+      //Act
+      string sentence = newCount.GetSentence();
+      string[] resultString = newCount.SplitSentence(sentence);
+
+      //Assert
+      Assert.Equal(testString, resultString);
+    }
     //
     // [Fact]
     // public void Test3_CountWord_ReturnFalse()
